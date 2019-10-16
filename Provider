@@ -1,4 +1,4 @@
-#tfvar
+
 variable "auth_token" {
   description = ""
 }
