@@ -3,7 +3,7 @@ variable "auth_token" {
   description = ""
 }
 
-variable "packet_project_id" {
+variable "project_id" {
   description = ""
 }
 
@@ -20,17 +20,17 @@ variable "private_key_filename" {
 
 variable "facilities" {
   description = "Prioritized list of facilities (data center) to deploy bare metal hosts"
-  default     = ["ewr1"]
+  default     = ["Dallas Data Center"]
 }
 
 variable "server_count" {
-  description = "Number of webserver bare metal hosts to spin up"
+  description = "Number of bare metal hosts to spin up"
   default     = "2"
 }
 
-variable "webserver_plan" {
-  description = "Set the Packet server type for the webservers"
-  default     = "t1.small.x86"
+variable "Server_Spec" {
+  description = "Set the Server type for the CSCF"
+  default     = "Dell-R740xd-32C-384G"
 }
 
 variable "operating_system" {
